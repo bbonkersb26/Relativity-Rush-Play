@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-09-15T00:12:20.988Z",
+  "stylesheetSource": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400..700&family=Manrope:wght@400..800&family=Space+Mono:wght@400;700&display=swap",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "fonts": [
+    {
+      "family": "DM Sans",
+      "weight": "400 700",
+      "filename": "dm-sans-latin-variable.woff2",
+      "repoDir": "dmsans",
+      "license": "DM-Sans-OFL.txt",
+      "sourceUrl": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      "sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
+      "byteLength": 36932
+    },
+    {
+      "family": "Manrope",
+      "weight": "400 800",
+      "filename": "manrope-latin-variable.woff2",
+      "repoDir": "manrope",
+      "license": "Manrope-OFL.txt",
+      "sourceUrl": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "byteLength": 24836
+    },
+    {
+      "family": "Space Mono",
+      "weight": "400",
+      "filename": "space-mono-latin-400.woff2",
+      "repoDir": "spacemono",
+      "license": "Space-Mono-OFL.txt",
+      "sourceUrl": "https://fonts.gstatic.com/s/spacemono/v17/i7dPIFZifjKcF5UAWdDRYEF8RQ.woff2",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      "sha256": "fb4a81a2d0a893e5c38c394a7e716a1cef0b24610a0af49c96f6d529bd66bf2b",
+      "byteLength": 16520
+    },
+    {
+      "family": "Space Mono",
+      "weight": "700",
+      "filename": "space-mono-latin-700.woff2",
+      "repoDir": "spacemono",
+      "license": "Space-Mono-OFL.txt",
+      "sourceUrl": "https://fonts.gstatic.com/s/spacemono/v17/i7dMIFZifjKcF5UAWdDRaPpZUFWaHg.woff2",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      "sha256": "2d46bd159b53f55c41167a4f1540a074649464194fd1e416f5b4694a6c0f282c",
+      "byteLength": 16724
+    }
+  ],
+  "licenses": [
+    {
+      "family": "DM Sans",
+      "filename": "DM-Sans-OFL.txt",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/dmsans/OFL.txt",
+      "sha256": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1",
+      "byteLength": 4482
+    },
+    {
+      "family": "Manrope",
+      "filename": "Manrope-OFL.txt",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt",
+      "sha256": "e01b637272e0cbdfb240184dd98ea5cc671556d9894dae2668d92ab2c906787c",
+      "byteLength": 4384
+    },
+    {
+      "family": "Space Mono",
+      "filename": "Space-Mono-OFL.txt",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/spacemono/OFL.txt",
+      "sha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f",
+      "byteLength": 4392
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "file": "kerr-transfer.bin",
+  "width": 768,
+  "height": 512,
+  "format": "RGBA Float32 little-endian",
+  "byteLength": 6291456,
+  "sha256": "50e0d6520ad3b48c4dc24e70319a68c5ef8edee2aed87a73057af1a0fab9e94a",
+  "channels": [
+    "r/M: -1=captured, 0=escaped, positive=disk",
+    "cos(source phi)",
+    "sin(source phi)",
+    "g=nu_observer/nu_emitter"
+  ],
+  "sampling": {
+    "order": "Row-major, x fastest; row 0 is BOTTOM; DataTexture.flipY=false",
+    "pixelCenters": true,
+    "alpha": [
+      -21,
+      21
+    ],
+    "beta": [
+      -14,
+      14
+    ],
+    "uv": "u=(alpha+21)/42; v=(beta+14)/28; alpha increases right, beta increases up"
+  },
+  "physics": {
+    "units": "G=c=M=1",
+    "metric": "Kerr in Boyer–Lindquist coordinates",
+    "spin": 0.6,
+    "inclinationDegrees": 80,
+    "observer": "Stationary at asymptotic infinity; initial u=0 exactly",
+    "observerAzimuth": 0,
+    "horizonRadius": 1.8,
+    "diskInnerRadius": 3.829069418813151,
+    "diskOuterRadius": 18,
+    "disk": "Opaque, infinitesimally thin equatorial disk; positive-phi circular Keplerian motion",
+    "constants": "lambda=-alpha*sin(i); q=beta^2+cos(i)^2*(alpha^2-a^2)",
+    "direction": "Positive backward Mino time; u_initial=0, u_prime=1, mu=cos(i), mu_prime=beta*sin(i); phi_prime is negative future Carter expression",
+    "frequencyShift": "g=1/[u^t*(1-Omega*lambda)]; Omega=1/(r^(3/2)+a); u^t=(r^(3/2)+a)/sqrt(r^3-3r^2+2*a*r^(3/2))",
+    "patternAdvection": "For positive-phi rotating material use pattern(phi-Omega*t). No retarded emission-time map is included."
+  },
+  "integration": {
+    "method": "Adaptive Dormand–Prince 5(4), double-precision u,du/ds,mu,dmu/ds,phi",
+    "tolerance": 1e-11,
+    "errorScale": "tol*(1+max(abs(old),abs(new)))",
+    "captureSurface": "r_horizon+1e-6 M",
+    "diskEvent": "Bracketed Newton event refinement by partial-step reintegration",
+    "turningPoints": "Second-order separated Carter equations; no square-root sign switching",
+    "maxSteps": 12000,
+    "maxMinoTime": 12,
+    "solverSha256": "f0b806aa38d266ecae46730c7534dd8139e0f08a475c4970cfda76907e60f59d"
+  },
+  "limitations": [
+    "Fixed observer and spin, single ray per texel; not DNGR ray bundles or an IMAX reproduction.",
+    "Near-pole azimuth convergence is validated for the production 768x512 map (nearest nonzero |alpha|=0.02734375 M), not arbitrary infinitesimal nonzero angular momentum.",
+    "No volumetric disk, radiative transfer, plasma, magnetic field, self-gravity, lens flare, or emission-time delay.",
+    "Texture encodes disk transfer and horizon/escape classification, not a celestial-sphere deflection map.",
+    "Subpixel critical-curve images require runtime antialiasing; map does not promise resolution of arbitrarily high image orders."
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/1502.03808",
+      "sections": "Appendix A.1 Eqs.4–6,12,15; A.6; section4 for film spin and frequency-shift choices",
+      "implementation": "Original separated-geodesic implementation; no paper images or DNGR source code copied."
+    }
+  ],
+  "statistics": {
+    "captured": 19054,
+    "escaped": 253674,
+    "disk": 120488,
+    "higherOrderDisk": 18310,
+    "unresolved": [],
+    "crossings": {
+      "1": 102178,
+      "2": 17998,
+      "3": 294,
+      "4": 16,
+      "5": 2
+    },
+    "steps": 61269584,
+    "rejected": 597424,
+    "maxSteps": 1150,
+    "maxRadialResidual": 1.2589118672235895e-11,
+    "maxPolarResidual": 5.003728348872522e-11,
+    "minRadius": 3.8293649217420835,
+    "maxRadius": 17.99995511650914,
+    "minFrequencyShift": 0.33190421532512265,
+    "maxFrequencyShift": 1.4436477419794413,
+    "diskPixelBounds": {
+      "minX": 36,
+      "maxX": 734,
+      "minY": 91,
+      "maxY": 461
+    },
+    "edgeDiskPixels": {
+      "left": 0,
+      "right": 0,
+      "bottom": 0,
+      "top": 0
+    },
+    "meanAcceptedSteps": 155.81660970052084
+  },
+  "generationSeconds": 25.6704774
+}

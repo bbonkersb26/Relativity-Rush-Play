@@ -1,0 +1,111 @@
+{
+  "file": "einstein-human.glb",
+  "bytes": 9035092,
+  "sha256": "42810e8bc3119499c7133c9a9fc946f5169e319beeebd8cce45d391fc10d3d6c",
+  "modelUnits": "meters",
+  "up": "+Y",
+  "forward": "+Z",
+  "restHeight": 1.8195863831788301,
+  "restMinY": -0.009509669616818428,
+  "restMaxY": 1.8100767135620117,
+  "bones": {
+    "Head": {
+      "position": [
+        0,
+        1.5997999685933693,
+        -0.017399985977202482
+      ],
+      "quaternion": [
+        0.014484619801307145,
+        0,
+        0,
+        0.9998950923918025
+      ]
+    },
+    "neck_01": {
+      "position": [
+        0,
+        1.5204998401619896,
+        -0.0414000211215535
+      ],
+      "quaternion": [
+        0.14641396442379395,
+        0,
+        0,
+        0.9892234080437582
+      ]
+    },
+    "spine_03": {
+      "position": [
+        0,
+        1.3108998164970191,
+        0.006899974973219429
+      ],
+      "quaternion": [
+        -0.11300075519232405,
+        0,
+        0,
+        0.9935949020229344
+      ]
+    },
+    "pelvis": {
+      "position": [
+        0,
+        0.9490999865331244,
+        -0.042999948875725995
+      ],
+      "quaternion": [
+        0.1423640407513729,
+        0,
+        0,
+        0.989814366384395
+      ]
+    },
+    "hand_l": {
+      "position": [
+        0.7064869904546132,
+        1.455499969601808,
+        -0.06539998255783643
+      ],
+      "quaternion": [
+        3.3499422731840864e-8,
+        7.125918294264089e-8,
+        -0.7071067732096689,
+        0.7071067891634242
+      ]
+    },
+    "foot_l": {
+      "position": [
+        0.11430513113737106,
+        0.08649976556390354,
+        -0.0875003241393507
+      ],
+      "quaternion": [
+        0.8509463607954556,
+        1.2522967287966152e-7,
+        2.0288155655532272e-7,
+        0.5252525973742392
+      ]
+    }
+  },
+  "materials": [
+    "MI_Hair_1",
+    "MI_Eyes",
+    "MI_Superhero_Male"
+  ],
+  "clipNames": [
+    "Idle_Loop",
+    "Jog_Fwd_Loop",
+    "Sprint_Loop",
+    "Jump_Start",
+    "Jump_Loop",
+    "Jump_Land",
+    "Roll",
+    "Death01"
+  ],
+  "startupPacking": {
+    "sourceBytes": 16440468,
+    "sourceSha256": "31e07cdbbe80f6817a737992287d5f285af9b2062ebb837c0a32a5238949a830",
+    "removed": "Unused body normal and roughness maps; geometry, animation and retained texture bytes unchanged."
+  }
+}
